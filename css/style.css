@@ -255,6 +255,11 @@ section .enter a:hover {
     font-weight: bold;
 }
 
+.banda-list img:hover {
+    -webkit-animation: shake 1s;
+    animation: shake 1s;
+}
+
 /* Discografia */
 
 

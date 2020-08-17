@@ -38,25 +38,25 @@
       <div class="banda-list animate__animated animate__backInUp">
 
         <ul>
-          <li>
+          <li onmouseover="moveElementTitle(this)">
             <a href="#bonham"><img
                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1597366627/Led%20Zeppelin/1_wlbf3x.jpg" alt=""
                 srcset=""></a>
             <a href="#bonham">John Bonham</a>
           </li>
-          <li>
+          <li onmouseover="moveElementTitle(this)">
             <a href="#jones"><img
                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1597366630/Led%20Zeppelin/2_aybil1.jpg" alt=""
                 srcset=""></a>
             <a href="#jones">John Paul Jones</a>
           </li>
-          <li>
+          <li onmouseover="moveElementTitle(this)">
             <a href="#plant"><img
                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1597366624/Led%20Zeppelin/3_ujzve6.jpg" alt=""
                 srcset=""></a>
             <a href="#plant">Robert Plant</a>
           </li>
-          <li>
+          <li onmouseover="moveElementTitle(this)">
             <a href="#page"><img
                 src="https://res.cloudinary.com/dzkqopnby/image/upload/v1597366626/Led%20Zeppelin/4_gxe8ip.jpg" alt=""
                 srcset=""></a>
@@ -140,6 +140,21 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+
+function moveElementTitle(elem) {
+    // get all 'a' elements
+    var a = document.getElementsByTagName('a');
+    // loop through all 'a' elements
+    for (i = 0; i < a.length; i++) {
+
+    }
+    // add 'active' classs to the element that was clicked
+    elem.classList.add('animate__animated');
+    elem.classList.add('animate__bounce');
+}
   </script>
 </body>
 
