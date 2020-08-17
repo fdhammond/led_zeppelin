@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    
+  }
+
+/* Gallery Main */
+
+.image-gallery {
+    margin-bottom: 5em;
+}
+
+.image-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery ul li {
+    height: 40vh;
+    flex-grow: 1;
+}
+
+.image-gallery ul li img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.image-gallery ul li:last-child {
+    flex-grow: 10;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .image-gallery ul li {
+      height: 30vh;
+    }
+  }
+
+  @media (max-height: 480px) {
+    .image-gallery ul li {
+      height: 80vh;
+    }
+  }
+
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .image-gallery ul {
+      flex-direction: row;
+    }
+  
+    .image-gallery ul li {
+      height: auto;
+      width: 100%;
+    }
+  
+    .image-gallery ul li img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+
+
+
+/*  */
+
+.main-background {
+    background-image: url('https://res.cloudinary.com/dzkqopnby/image/upload/v1597546539/Led%20Zeppelin/1_qeymhs.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500px auto;
+    height: 100vh;
+}
+
+section .enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+section .enter h2 {
+    margin-top: 24em;
+}
+
+section .enter a {
+    text-decoration: underline;
+    color: black;
+}
+
+section .enter a:hover {
+    text-decoration: underline;
+    color: #01AD95;
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    padding-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lato';
+    font-weight: bold;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #01AD95;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav #active {
+      background-color: #01AD95;
+      color: white;
+  }
+
+  /* Banda */
+
+.band-presentation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+}
+
+.banda-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+}
+
+.banda-list ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.banda-title ul li{
+    margin: 14px;
+    list-style: none;
+}
+
+.banda-list ul li img {
+    max-width: 350px;
+    max-height: 350px;
+    margin: 5px;
+}
+
+.banda-title img:hover {
+    opacity: 1;
+}
+
+.banda-list ul li a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.banda-list ul li a:hover {
+    color: #01AD95;
+}
+
+#bonham {
+    margin-top: 12em;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 45px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 45px;
+}
+
+.artist h2 {
+    margin: 0 5em;
+}
+
+.artist p {
+    margin: 24px 5em 0 5em;
+    letter-spacing: 1px;
+}
+
+/* Banda */
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+.container-main-banda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.container-main-banda h2 {
+    margin: 5em 0;
+}
+
+.container-main-banda p {
+    margin: 18px 15em;
+}
+
+
+
+.banda-list a {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Discografia */
+
+
+.container-discografia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-bottom: 8em;
+    text-decoration: underline;
+}
+
+.container-discografia h2 {
+    font-size: 2em;
+}
+
+.discografia-container {
+    margin-top: 8em;
+    margin-bottom: 5em;
+}
+
+.disco-discografia img {
+    max-width: 400px;
+    height: auto;
+    margin-left: 3em;
+    margin-bottom: 3em;
+}
+
+
+.disco-discografia h2 {
+    margin: 5em 2em;
+}
+
+.disco-discografia p{
+    margin: 1em 5em;
+}
+
+
+
+
+
+/* Musica */
+
+
+
+
+
+.discos {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.disco-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 24px;
+}
+
+.disco-item h2 {
+    text-align: center;
+    margin: 4em 0 1em 0;
+}
+
+.disco-item img {
+    width: 300px;
+    height: auto;
+    margin: 2em 0;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1800px) {
+    .banda-list ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .banda-list ul li a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-main-banda p {
+        margin: 18px 5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .banda-title ul li{       
+        list-style: none;
+    }
+    .container-main-banda p {
+        margin: 18px 24px;
+    }
+    
+}
